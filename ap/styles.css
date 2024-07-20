@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+html{
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+#sign-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+#sign-in > img{
+    margin-top: -10px;
+}
+
+.box{
+    border: none;
+    box-shadow: 0 0 0 0.2px gray;
+    width: 350px;
+    height: 63vh;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 20px 25px;
+}
+.box h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+.box form{
+    width: 100%;
+    margin-top: 10px;
+}
+.box form label{
+    font-size: 14px;
+    font-weight: 550;
+}
+.box form input{
+    width: 100%;
+    height: 33px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    padding-left: 8px;
+}
+.box form input:focus{
+    outline: none;
+    box-shadow: 0 0 0px 3px #c7f2f9;
+}
+.box form button{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #fed722;
+    border: none;
+    cursor: pointer;
+}
+.box form button:hover{
+    background-color: #f7ca00;
+}
+.box p{
+    font-size: 13px;
+    margin-top: 15px;
+}
+.box a{
+    font-size: 13px;
+    color: #2a7cc6;
+    text-decoration-thickness: .5px;
+}
+.box a:hover{
+    color: #c45500;
+    text-decoration: underline;
+}
+.box details{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+details summary{
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+summary::-webkit-details-marker{
+    display: none;
+}
+summary::before{
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 7px;
+    transition: transform 0.3s ease;
+    color: #656565;
+}
+details[open] summary::before{
+    transform: rotate(90deg);
+}
+.box details summary a{
+    text-decoration: none;
+}
+.box details p{
+    font-size: 12px;
+    margin-left: 20px;
+    line-height: .2;
+}
+
+.box hr{
+    transform: scaleY(0.2);
+    transform-origin: center;
+}
+.box div{
+    line-height: 23px;
+    margin-bottom: -20px;
+}
+.box div span{
+    font-weight: 600;
+}
+.box div a{
+    text-decoration: none;
+}
+
+div#new-to-amazon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+div.hr-with-text {
+    display: flex;
+    align-items: center;
+    width: 350px;
+}
+div.hr-with-text hr {
+    flex-grow: 1;
+    transform: scaleY(0.2);
+}
+div.hr-with-text span {
+    font-size: 13px;
+    padding: 0 6px;
+    color: gray;
+}
+div#new-to-amazon button{
+    width: 350px;
+    height: 28px;
+    color: black;
+    background-color: white;   
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 0 2px 0.2px gray;
+    cursor: pointer;
+}
+div#new-to-amazon button:hover{
+    background-color: #f7fafa;
+}
+
+div.bottom-hr{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    margin-top: 25px;
+}
+div.bottom-hr hr{
+    width: 85%;
+    transform: scaleY(.1);
+    box-shadow: 0px 25px 20px .5px gray;
+}
+
+footer{
+    padding: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .links{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+footer .links a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #0866be;
+}
+footer .links a:hover{
+    color: #c45500;
+    text-decoration: underline;
+}
+footer p{
+    margin-top: 10px;
+    font-size: 12px;
+}
